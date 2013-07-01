@@ -1,0 +1,11 @@
+<?php
+ 
+function color_b(&$string) {  
+$cmd="printf \030[01;40;32m\".$string;  
+$a=exec($cmd);  
+print "$a"."\n";  
+}  
+  
+$string="aaaaaaaaaaaa";  
+  
+color_b($string);
